@@ -172,9 +172,9 @@ def VacantesActivas(request):
     else:
         try:
             form = VacantesAForm(request.POST)
-            new_task =form.save(commit=False)
-            new_task.user=request.user
-            new_task.save()
+            new_vacante =form.save(commit=False)
+            new_vacante.user=request.user
+            new_vacante.save()
             return redirect('promociones')
         except ValueError:
             return render(request, "Crear_proms.html",{
