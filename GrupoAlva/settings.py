@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-)f9e7brwfv281&acho&6svg!#_mwqfe(t4guss90=ammb*7)q6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.145.114.57','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['3.15.5.126','localhost','127.0.0.1']
 
 
 # Application definition
@@ -78,7 +78,7 @@ DATABASES = {
 DATABASES = {  
    'default': {  
      'ENGINE': 'django.db.backends.sqlite3',  
-     'NAME': 'intranet',  
+     'NAME': 'mydatabase',  
    }  
  }  
 
@@ -119,7 +119,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 import os
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
 STATICFILES_DIRS = [BASE_DIR/'Dashboard/static',] 
 
