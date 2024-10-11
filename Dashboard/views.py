@@ -229,3 +229,24 @@ def tcedis(request):
 def tprocesos(request):
     return render(request,'tprocesos.html',{
     })
+@login_required    
+def alvaenvases(request):
+    messages.success(request, f'¡Bienvenid@, {request.user.first_name} {request.user.last_name}!')
+    return render(request,'alvaenvases.html',{
+    })
+@login_required
+def aprom(request):
+    return render(request,'aprom.html',{
+    })
+@login_required
+def auniversidad(request):
+    return render(request,'auniversidad.html',{
+    })
+@login_required
+def acedis(request):
+    return render(request,'acedis.html',{
+    })
+@login_required
+def aprocesos(request):
+    return render(request,'aprocesos.html',{
+    })
