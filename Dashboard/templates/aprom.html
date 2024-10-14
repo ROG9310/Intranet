@@ -185,26 +185,25 @@
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav mr-auto py-0">
-                    <a href="/alvamex/" class="nav-item nav-link">Inicio</a>
-                    <a href="#promociones" class="nav-item nav-link">Promociones</a>
-                    <a href="#vacantes" class="nav-item nav-link">Vacantes</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Modulos</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="/universidad/" class="dropdown-item">Universidad</a>
-                            <a href="/cedis/" class="dropdown-item">Ubicación de Cedis</a>
-                            <a href="/pyp/" class="dropdown-item">Procesos y Politicas</a>
-                        </div>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="/alvaenvases/" class="nav-item nav-link">Inicio</a>
+                <a href="/alvaenvases/aprom/" class="nav-item nav-link">Promociones</a>
+                <a href="#vacantes" class="nav-item nav-link">Vacantes</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Modulos</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="/alvaenvases/auniversidad/" class="dropdown-item">Universidad</a>
+                        <a href="/alvaenvases/acedis/" class="dropdown-item">Ubicación de Cedis</a>
+                        <a href="/alvaenvases/aprocesos/" class="dropdown-item">Procesos y Politicas</a>
                     </div>
-                    <a href="#footer_idx" class="nav-item nav-link">Contacto</a>
                 </div>
-                <div class="navbar-nav  py-0" style="width: 100%; max-width: 300px;">
-                    {% if user.is_authenticated %}
-                    <a id="cerrar_sesion" href="/logout" class="nav-item nav-link">CERRAR SESIÓN</a>
-                    {% endif %}
-                    
+                <a href="#footer_idx" class="nav-item nav-link">Contacto</a>
+            </div>
+            <div class="navbar-nav  py-0" style="width: 100%; max-width: 300px;">
+                {% if user.is_authenticated %}
+                <a id="cerrar_sesion" href="/logout" class="nav-item nav-link">CERRAR SESIÓN</a>
+                {% endif %}
+                
                 </div>
             </div>
         </nav>
