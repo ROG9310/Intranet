@@ -9,10 +9,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-
     <!-- Favicon -->
     <link href="{% static 'imagenes/alvamex.png' %}" rel="icon">
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
@@ -29,107 +27,105 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">-->
-    <script src="{% static 'javasript/followers.js' %}"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{% static 'css/slick.css' %}" rel="stylesheet">
 </head>
+<style>
+    /* service section start */
 
-<body>
-    <style>
-        /* service section start */
-    
-    .service_section {
-        width: 90%;
-        padding-top: 2%;
-        allign-item:center;
-        margin:auto;
-    }
-    
-    .service_taital {
-        width: 100%;
-        font-size: 3vw;
-        font-weight: 800;
-        text-align: center;
-        margin-bottom:1%;
-    }
-      
-    .service_box {
-        width: 100%;
-        height: 100%;
-        padding: 5%;
-        border-radius: 10px;
-        margin-top: 1%;
-        border: 5px groove var(--principal);
-    }
-    
-    
-    .service_box:hover {
-        background-color: #none;
-        border: 5px groove red;
-    }
-        
-    .building_icon {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        min-height: 93px;
-    }
-    
-    .residential_text {
-        font-size: 1.2vw;
-        width: 100%;
-        color: black;
-        text-align: center;
-        margin-bottom: 2%;
-    }
-    
-    .service_text {
-        width: 100%;
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 4%;
-    }
-    
-    .readmore_bt {
-        width: 170px;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 2%;
-    }
+.service_section {
+    width: 90%;
+    padding-top: 2%;
+    allign-item:center;
+    margin:auto;
+}
 
-    
-    #boton_info:hover {
-        color: #fcfcfd;
-        background-color: var(--principal);
-    }
-    
-    #ficha_vacante{
-        text-decoration:none;
-        transition:1s;
-        padding:1%;
-    }
-    
-    #ficha_vacante:hover{
-        text-decoration:none;
-        scale:1.05;
-        z-index:10;
-        background:var(--bg_init);
-    }
+.service_taital {
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom:1%;
+}
+  
+.service_box {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    margin-top: 1%;
+    border: 5px groove var(--principal);
+}
 
+
+.service_box:hover {
+    background-color: #none;
+    border: 5px groove red;
+}
     
-    /* service section end */
-    
-    #iconos_redes{
-        color:white;
-        font-size:1vw;
-    }
-    #iconos_redes:hover{
-        color:var(--principal);
-        scale:1.5;
-    }
+.building_icon {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    min-height: 93px;
+}
+
+.residential_text {
+    font-size: 1.2vw;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.service_text {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.readmore_bt {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+#boton_info:hover {
+    color: #fcfcfd;
+    background-color: var(--principal);
+}
+
+#ficha_vacante{
+    text-decoration:none;
+    transition:1s;
+    padding:1%;
+}
+
+#ficha_vacante:hover{
+    text-decoration:none;
+    scale:1.05;
+    z-index:10;
+    background:var(--bg_init);
+}
+
+
+/* service section end */
+
+#iconos_redes{
+    color:white;
+    font-size:1vw;
+}
+#iconos_redes:hover{
+    color:var(--principal);
+    scale:1.5;
+}
 </style>
+<body>
     <!-- Topbar Start -->
     <div class="container-fluid d-none d-lg-block">
         <div class="row align-items-center bg-dark px-lg-12">
@@ -169,8 +165,6 @@
         </div>
     </div>
     <!-- Topbar End -->
-
-
     <!-- Navbar Start -->
     <div id ="Navbar" class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
@@ -183,14 +177,14 @@
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
                     <a href="/alvamex/" class="nav-item nav-link">Inicio</a>
-                    <a href="#promociones" class="nav-item nav-link">Promociones</a>
-                    <a href="#vacantes" class="nav-item nav-link">Vacantes</a>
+                    <a href="/promociones/" class="nav-item nav-link">Promociones</a>
+                    <a href="#ultimasnoticias" class="nav-item nav-link">Noticias Recientes</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Modulos</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="/universidad/" class="dropdown-item">Universidad</a>
                             <a href="/cedis/" class="dropdown-item">Ubicación de Cedis</a>
-                            <a href="/pyp/" class="dropdown-item">Procesos y Politicas</a>
+                            <a href="/procesos/" class="dropdown-item">Procesos y Politicas</a>
                         </div>
                     </div>
                     <a href="#footer_idx" class="nav-item nav-link">Contacto</a>
@@ -205,9 +199,9 @@
         </nav>
     </div>
     <div id="promociones" class="container-fluid">
-        <h1 class="service_taital p-2 text-center">Promociones del Mes</h1>
         <div class="row">
             <div class="col-lg-14 px-0">
+                <h1 class="service_taital p-2 text-center">Promociones del Mes</h1>
                 <div  class="carousel slide" data-bs-ride="carousel" style="height: 500px; overflow:hidden;">
                     <div class="carousel-inner" style="height: 500px;">
                         <div class="carousel-item active" style="height: 500px;">
@@ -243,7 +237,6 @@
         </div>
     </div>
      <!-- banner section end -->
-
 
     <div id="vacantes" class="service_section container-fluid " >
         <div class="container-fluid ">
